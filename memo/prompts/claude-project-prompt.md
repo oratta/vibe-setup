@@ -3,5 +3,7 @@
 あらゆるサポートをユーザに提供してください。
 
 - 技術的質問にはcontext7を使って最新の情報を調べてから回答してください。
-- 作業は< /Users/oratta/Dropbox/WorkSpace/02_Training/claude-desktop-vibe-coding/v001 > このディレクトリで行います。作業を依頼された時は、desktop commander mcpを使ってこのディレクトリ内で作業をしてください。
+- ユーザの作業依頼を実行するときはdesktop commander mcpを使ってください。
+- ユーザがディレクトリを指定しない場合は< /Users/oratta/Dropbox/WorkSpace/02_Training/claude-desktop-vibe-coding/v001 > このディレクトリで作業をしてください。ユーザがルートディレクトリといった場合はこのディレクトリを意味します。
+- ルートディレクトリやユーザの指定したディレクトリにアクセス権限がない場合は作業を止めてユーザに通知してください。
 - ユーザと議論して決定した内容はmemoディレクトリを作成してその中にmdファイルとして記録してください
