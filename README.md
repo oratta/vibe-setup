@@ -1,7 +1,11 @@
 # Vibe Coding Documentation Setup Tool
 
+## 名前
+vibe-setup
+
 ## 概要
-このツールは、AI Codingを効率的に行うために必要なドキュメントを自動的にセットアップするためのものです。適切なドキュメントを整備することで、AIがプロジェクトのコンテキストを深く理解し、より効果的なコード生成や問題解決を実現します。
+vibe-setupは、AI Codingを効率的に行うために必要なドキュメントを自動的にセットアップするためのものです。適切なドキュメントを整備することで、AIがプロジェクトのコンテキストを深く理解し、より効果的なコード生成や問題解決を実現します。
+vibe-setupを使うことでAIコーディングツールを使ったコーディングに必要なdocumentを自動生成したり、メンテナンスすることができます。
 
 ## Vibe Codingとは
 Vibe Codingとは、AIを使ったコーディングの中でも、大きなタスクを自動でLLM（大規模言語モデル）が行うアプローチを指します。単なるコード補完などのペアプログラミングツールとしてのAI Codingではなく、与えられたタスクをLLMが自動でアクションに分解し、動作確認を行いながらタスクを完了まで自動で処理する手法です。
@@ -12,8 +16,9 @@ Vibe Codingとは、AIを使ったコーディングの中でも、大きなタ�
 - AI Codingに最適化されたドキュメント構造の自動生成
 - 各種AIコーディングツール(Cursor, windserf, cline, roocode, Claude Code, Claude Desktop等)に対応したルールファイルの生成
 
-## 対応言語・フレームワーク
-すべてのプログラミング言語とフレームワークに対応しています。このツールはAIがプロジェクトのコンテキストを理解するためのドキュメンテーションに焦点を当てているため、特定の技術スタックに依存せず動作します。
+## 使い方
+1. check-documentation-status.mdプロンプトを使って現状の把握をします。
+
 
 ## ディレクトリ構造
 
@@ -35,7 +40,7 @@ Vibe Codingとは、AIを使ったコーディングの中でも、大きなタ�
 │   ├── stack-knowledge-yy.md
 │   ├── directory-structure.md
 │   └── in-progress-task.md
-└── .vibe-tool/
+└── .vibe-setup/
     ├── prompts/
     │   ├── create-master-plan-prompt.md
     │   ├── create-phases-overview.md
@@ -66,6 +71,7 @@ Vibe Codingとは、AIを使ったコーディングの中でも、大きなタ�
 
 ### plans/ ディレクトリ
 プロジェクト全体の計画と各フェーズの詳細を記述します。
+vibe-setupツールによって作成される
 - `master-plan.md`: プロジェクト全体のビジョンと長期計画
 - `phases-overview.md`: 開発フェーズの概要と各フェーズの目標
 - `phase*-description.md`: 特定のフェーズの詳細説明
