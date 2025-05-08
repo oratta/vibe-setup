@@ -17,8 +17,8 @@ Vibe Codingとは、AIを使ったコーディングの中でも、大きなタ�
 - 各種AIコーディングツール(Cursor, windserf, cline, roocode, Claude Code, Claude Desktop等)に対応したルールファイルの生成
 
 ## 使い方
-1. check-documentation-status.mdプロンプトを使って現状の把握をします。
-
+1. AI Codingをこれから行うプロジェクト内にvibe-setupをgit cloneします
+2. status-check.mdを実行します。
 
 ## ディレクトリ構造
 
@@ -43,21 +43,20 @@ Vibe Codingとは、AIを使ったコーディングの中でも、大きなタ�
 └── .vibe-setup/
     ├── prompts/
     │   ├── create-master-plan-prompt.md
-    │   ├── create-phases-overview.md
-    │   ├── create-target-phase.md
-    │   ├── create-target-phase-implementation-plan.md
-    │   ├── create-stack-knowledge.md
-    │   └── maintenance-documents.md
+    │   ├── create-phases-overview-prompt.md
+    │   ├── create-target-phase-prompt.md
+    │   ├── create-target-phase-implementation-plan-prompt.md
+    │   ├── create-stack-knowledge-prompt.md
+    │   └── maintenance-documents-prompt.md
     └── rules/
         ├── global.md
-        ├── task-management.md
-        └── document-maintenance.md
+        └── task-management-github.md
 ```
 
 ## 使い方
 
 ### フェーズ1：プロンプトベースの利用（現在）
-1. `.vibe-tool/prompts/` ディレクトリから目的に合ったプロンプトファイルを選択
+1. `.vibe-setup/prompts/` ディレクトリから目的に合ったプロンプトファイルを選択
 2. プロンプトの内容をAIツール（Claude, ChatGPT, Cursor等）にコピー＆ペースト
 3. 生成されたドキュメントを適切なディレクトリに配置
 
