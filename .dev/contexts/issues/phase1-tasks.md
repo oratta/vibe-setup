@@ -11,11 +11,10 @@ Vibe Codingツールのフェーズ1に必要な基本ディレクトリ構造�
 1. README.mdで定義されている以下のディレクトリ構造を作成する：
    ```
    /
-   ├── plans/
-   │   ├── archives/
-   ├── specs/
-   └── .vibe-tool/
+   └── .vibe-setup/
+       ├── .dev/
        ├── prompts/
+       ├── scripts/
        └── rules/
    ```
 
